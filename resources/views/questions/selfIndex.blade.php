@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row " style="gap:10px;">
+    <div class="row ">
         @foreach ($questions as $question)
         <div class="card col-4 p-0">
             <div class="card-header">

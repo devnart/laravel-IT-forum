@@ -32,9 +32,10 @@ Route::delete('/questions/{id}', [App\Http\Controllers\QuestionController::class
 Route::get('/myquestions', [App\Http\Controllers\QuestionController::class, 'selfIndex'])->name('myQuestions')->middleware('auth');
 
 Route::post('/responses', [App\Http\Controllers\ResponseController::class, 'store'])->name('storeResponse')->middleware('auth');
+Route::delete('/responses/{id}', [App\Http\Controllers\ResponseController::class, 'destroy'])->name('deleteResponse')->middleware('auth');
 
 Route::get('/myresponses', [App\Http\Controllers\ResponseController::class, 'selfIndex'])->name('myResponses')->middleware('auth');
-Route::delete('/users/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('deleteResponse')->middleware('auth');
+Route::delete('/users/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('deleteUser')->middleware('auth');
 
 
 
