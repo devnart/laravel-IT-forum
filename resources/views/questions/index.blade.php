@@ -5,7 +5,7 @@
     <div class="row ">
         @foreach ($questions as $question)
 
-        <div class="card col-4 p-0">
+        <div class="card col-lg-4 col-md-6 col-sm-12 p-0 mb-2">
             <a href="/questions/{{$question->id}}">
                 <div class="card-header">
                     {{$question->title}}

@@ -72,7 +72,7 @@ class ResponseController extends Controller
      */
     public function edit(Response $response)
     {
-        //
+        
     }
 
     /**
